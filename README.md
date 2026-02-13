@@ -1,29 +1,17 @@
 # workSimulation
 
-## Google News image downloader (Python 3.14 + Playwright)
+## Google News opener (Python 3.14 + Playwright + Chrome)
 
-This repo now includes `google_news_image_downloader.py`, a small Python app that:
+This repo includes `google_news_open_chrome.py`, a Python app that opens:
 
-1. Opens `https://news.google.com` with Playwright.
-2. Finds the **3rd news article** on the page.
-3. Extracts that article's image URL.
-4. Downloads the image to your **Downloads** folder (`~/Downloads`, good for Chromebook/Linux environments).
+- `https://news.google.com`
+- using Playwright
+- with **Google Chrome** (`channel="chrome"`)
 
-## Setup (Chromebook)
-
-```bash
-python3 -m pip install playwright
-python3 -m playwright install chromium
-```
-
-## Run
+## Setup
 
 ```bash
-python3 google_news_image_downloader.py
+python3 -m pip install -r requirements.txt
+python3 -m playwright install chrome
 ```
-
-Optional flags:
-
-```bash
-python3 google_news_image_downloader.py --output-dir ~/Downloads --timeout-ms 45000
-```
+`
