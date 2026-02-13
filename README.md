@@ -14,15 +14,4 @@ This repo includes `google_news_open_chrome.py`, a Python app that opens:
 python3 -m pip install -r requirements.txt
 python3 -m playwright install chrome
 ```
-
-## Run
-
-```bash
-python3 google_news_open_chrome.py
-```
-
-Optional:
-
-```bash
-python3 google_news_open_chrome.py --headless --wait-seconds 3
-```
+`
