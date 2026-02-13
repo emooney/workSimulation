@@ -23,5 +23,5 @@ python3 google_news_open.py
 Optional:
 
 ```bash
-python3 google_news_open.py --headless --wait-seconds 3
+python3 google_news_open.py --wait-seconds 3
 ```
